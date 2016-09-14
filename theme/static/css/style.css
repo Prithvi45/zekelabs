@@ -103,7 +103,7 @@ blockquote {
   width: 100%;
   height: 100%;
   overflow: visible;
-  background: #fff url("../images/loading.gif") no-repeat center center; }
+  background: #fff url("http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/loading.gif") no-repeat center center; }
 
 @media (min-width: 1200px) {
   body.boxed {
@@ -424,7 +424,7 @@ Top bar style
 
 /***light navigation**/
 .navbar-default {
-  background: url("../images/pattern-2.png") repeat left top scroll;
+  background: "static/img/pattern-2.png" repeat left top scroll;
   border: 0px;
   margin: 0px;
   padding: 0px 0; }
@@ -939,7 +939,7 @@ accordions
   content: "\f106"; }
 
 .pattern-bg {
-  background: url("../images/pattern.png") repeat;
+  background: url("http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/pattern.png") repeat;
   padding: 60px 0; }
   .pattern-bg .center-heading h2, .pattern-bg .center-heading p {
     color: #fff; }
@@ -949,7 +949,7 @@ accordions
       background-color: #fff; }
 
 .other-info {
-  background: url("../images/pattern-2.png") repeat left top scroll #FFF; }
+  background: url("http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/pattern-2.png") repeat left top scroll #FFF; }
   .other-info h4 {
     text-transform: uppercase;
     font-weight: 700;
@@ -998,7 +998,7 @@ accordions
       margin-bottom: 5px; }
 
 .newsletter-section {
-  background: url("../images/pattern-2.png") repeat left top scroll #FFF;
+  background: "static/img/pattern-2.png" repeat left top scroll #FFF;
   padding: 80px 0; }
   .newsletter-section form {
     text-align: center; }
@@ -1010,7 +1010,7 @@ accordions
     margin-right: 10px; }
 
 .intro-video-section {
-  background: url("../images/pattern-2.png") repeat left top scroll #FFF;
+  background: "static/img/pattern-2.png" repeat left top scroll #FFF;
   padding: 80px 0; }
   .intro-video-section h1 {
     font-size: 50px;
@@ -1026,7 +1026,7 @@ accordions
       margin-right: 5px; }
 
 .video-bg-section {
-  background-image: url("../images/poster.png");
+  background-image: "http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/poster.png"
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden; }
