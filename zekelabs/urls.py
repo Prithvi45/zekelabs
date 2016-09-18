@@ -7,6 +7,7 @@ from django.views.i18n import set_language
 
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
+from prof import views as profviews
 
 
 
@@ -40,7 +41,7 @@ urlpatterns += [
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
-    # url(r'^register/$', profviews.register, name='register'),
+    url(r'^register/$', profviews.register, name='register'),
     # url(r'^register',direct_to_template, {"template": "done.html"}, name="home"),
     # url("^register", direct_to_template, {"template": "index.html"}, name="home"),
 

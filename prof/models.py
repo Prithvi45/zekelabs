@@ -4,9 +4,13 @@ from django.db import models
 
 from django.db import models
 
-class UserProfile(models.Model):
-    user = models.OneToOneField("auth.User")
+class RegisterProfile(models.Model):
+    # user = models.OneToOneField("auth.User")
+    name = models.CharField(max_length=20)
     email = models.EmailField(max_length=30)
     mobile = models.CharField(max_length=15,null=True)
-    subject = models.TextField()
-    
+    subject = models.CharField(max_length=30)
+    message = models.TextField()
+
+    def __unicode__(self):
+        return self.subject + ' ' + self.mobile
