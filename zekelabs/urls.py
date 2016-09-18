@@ -9,6 +9,7 @@ from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
 
+
 admin.autodiscover()
 
 # Add the urlpatterns for any custom Django applications here.
@@ -24,6 +25,7 @@ urlpatterns = i18n_patterns(
 if settings.USE_MODELTRANSLATION:
     urlpatterns += [
         url('^i18n/$', set_language, name='set_language'),
+        # url(r'^register',profviews.register, name='register'),
     ]
 
 urlpatterns += [
@@ -38,6 +40,9 @@ urlpatterns += [
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    # url(r'^register/$', profviews.register, name='register'),
+    # url(r'^register',direct_to_template, {"template": "done.html"}, name="home"),
+    # url("^register", direct_to_template, {"template": "index.html"}, name="home"),
 
     # HOMEPAGE AS AN EDITABLE PAGE IN THE PAGE TREE
     # ---------------------------------------------

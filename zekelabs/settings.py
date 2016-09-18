@@ -249,10 +249,14 @@ INSTALLED_APPS = (
     "mezzanine.forms",
     "mezzanine.galleries",
     "mezzanine.twitter",
+    "prof",
+    "mezzanine.accounts",
 
     # "mezzanine.accounts",
     # "mezzanine.mobile",
 )
+
+ACCOUNTS_PROFILE_MODEL = "prof.UserProfile"
 
 # List of middleware classes to use. Order is important; in the request phase,
 # these middleware classes will be applied in the order given, and in the
