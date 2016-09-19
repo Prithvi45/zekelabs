@@ -1,0 +1,11 @@
+{% extends "bases.html" %}
+{% load bootstrap3 %}
+
+{% block title %} My amazing blog{% endblock %}
+
+{% block content %}
+{% for posts in posts %}
+    <h2>{{ posts.title }}</h2>
+    <p>{{ posts.created }}</p>
+{% endfor %}
+{% endblock %}

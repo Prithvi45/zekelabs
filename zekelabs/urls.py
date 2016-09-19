@@ -9,7 +9,7 @@ from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 from prof import views as profviews
 
-
+from blogs import views as blogsviews
 
 admin.autodiscover()
 
@@ -41,7 +41,10 @@ urlpatterns += [
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    url("^bases$", direct_to_template, {"template": "bases.html"}, name="home"),
     url(r'^register/$', profviews.register, name='register'),
+    url(r'^blogs/$', 'blogs.views.index'),
+    url(r'^(?P<slug>[\w\-]+)/$', 'blogs.views.post'),
     # url(r'^register',direct_to_template, {"template": "done.html"}, name="home"),
     # url("^register", direct_to_template, {"template": "index.html"}, name="home"),
 
