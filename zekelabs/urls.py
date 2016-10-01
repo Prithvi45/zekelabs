@@ -4,11 +4,9 @@ from django.conf.urls import include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.views.i18n import set_language
-
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 from prof import views as profviews
-
 from blogs import views as blogsviews
 
 admin.autodiscover()
@@ -41,6 +39,7 @@ urlpatterns += [
     # one out.
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
+    url("^home$", direct_to_template, {"template": "index.html"}, name="home"),
     url("^bases$", direct_to_template, {"template": "bases.html"}, name="home"),
     url(r'^register/$', profviews.register, name='register'),
     url(r'^blogs/$', 'blogs.views.index'),

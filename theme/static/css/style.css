@@ -836,6 +836,7 @@ Footer styles
       margin: 3px 5px; }
       .footer .footer-social li a:hover {
         color: #fff; }
+
   .footer .phone {
     font-size: 20px;
     color: #fff; }
@@ -885,6 +886,7 @@ Footer styles
       color: #777; }
       .footer.light .footer-social li a:hover {
         color: #209b60; }
+        
     .footer.light ul.f-list li a {
       color: #888;
       border-bottom: 1px dashed rgba(0, 0, 0, 0.1); }

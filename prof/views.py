@@ -21,11 +21,15 @@ def register(request):
             email = form.cleaned_data['email']
             mobile = form.cleaned_data['mobile']
             subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
             
             
             
             # message = form.cleaned_data['message']
-            form.save()        
+            form.save()
+            from_email = 'curanest@gmail.com'
+            msg = EmailMultiAlternatives(subject, 'From ' + mobile + ' ' + email + ' ' + message, from_email, ['curanest@gmail.com'])
+            msg.send()        
             return render(request,'done.html',locals())
         return render(request,'notdone.html',locals())
     else:

@@ -305,6 +305,16 @@ OPTIONAL_APPS = (
     PACKAGE_NAME_GRAPPELLI,
 )
 
+EMAIL_HOST = 'smtp.gmail.com' 
+EMAIL_HOST_USER = 'curanest@gmail.com' 
+EMAIL_HOST_PASSWORD = 'Armaan05' 
+EMAIL_PORT = 587 
+EMAIL_USE_TLS = True
+
+
+
+
+
 ##################
 # LOCAL SETTINGS #
 ##################
