@@ -379,7 +379,35 @@ Top bar style
 
 /*url("../images/pattern.png")*/
 .navbar-inverse {
-  background: "static/img/pattern.png" repeat left top scroll;
+  background-color: transparent;
+  border: 0px;
+  margin: 0px;
+  padding: 0px 0; }
+  .navbar-inverse .navbar-nav > li > a {
+    font-family: "Open Sans", Arial, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #eee; }
+    .navbar-inverse .navbar-nav > li > a:hover {
+      color: rgba(0, 0, 0, 0.1);
+       background-color: #fff; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+  color: rgba(0, 0, 0, 0.1);
+   background-color: #fff; }
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+  color: rgba(0, 0, 0, 0.1);
+   background-color: #fff; }
+/*.navbar.shrink {
+  min-height: 35px;
+}
+*/
+/*
+.navbar-inverse {
+  background-color: transparent;
   border: 0px;
   margin: 0px;
   padding: 0px 0; }
@@ -403,7 +431,59 @@ Top bar style
   background-color: rgba(0, 0, 0, 0.1); }
 /*.navbar.shrink {
   min-height: 35px;
-}*/
+}
+*/
+
+
+/**new arrivals**/
+.new-arrivals {
+  position: relative;
+}
+.new-arrivals .item {
+  padding: 0px 15px;
+}
+
+.section-heading {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  color: #000;
+}
+
+/**partners**/
+.partners {
+  padding: 60px 0;
+  background-color: #1ab394;
+}
+.partners .item {
+  padding: 0px 15px;
+}
+.partners .owl-theme .owl-controls .owl-buttons div, .partners .section-heading {
+  color: #fff;
+}
+.partners .section-heading {
+  margin-bottom: 20px;
+}
+
+
+#owl-slider.col-md-12, #owl-partners.col-md-12 {
+  padding: 0px;
+}
+
+
+.similar-products {
+  margin-top: 50px;
+}
+.similar-products #owl-slider.col-md-12 .item {
+  padding: 0px 15px;
+}
+
+
+
+
 @media (min-width: 768px) {
   .navbar-nav > li > a {
     padding-top: 20px;
@@ -424,7 +504,7 @@ Top bar style
 
 /***light navigation**/
 .navbar-default {
-  background: "static/img/pattern-2.png" repeat left top scroll;
+  background-color : white;
   border: 0px;
   margin: 0px;
   padding: 0px 0; }
@@ -941,7 +1021,7 @@ accordions
   content: "\f106"; }
 
 .pattern-bg {
-  background: url("http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/pattern.png") repeat;
+  background-color: #fff;
   padding: 60px 0; }
   .pattern-bg .center-heading h2, .pattern-bg .center-heading p {
     color: #fff; }
