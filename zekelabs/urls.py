@@ -44,6 +44,7 @@ urlpatterns += [
     url(r'^register/$', profviews.register, name='register'),
     url(r'^blogs/$', 'blogs.views.index'),
     url(r'^(?P<slug>[\w\-]+)/$', 'blogs.views.post'),
+    url(r'^courses/(?P<course>\w*)/$', profviews.course_detail, name='course_detail'),
     # url(r'^register',direct_to_template, {"template": "done.html"}, name="home"),
     # url("^register", direct_to_template, {"template": "index.html"}, name="home"),
 

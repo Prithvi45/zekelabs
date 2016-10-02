@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 from django.forms import inlineformset_factory
-from .models import RegisterProfile
+from .models import RegisterProfile,Courses
 from .forms import Register 
  #,ImageForm
 from django.http import HttpResponseRedirect
@@ -34,4 +34,12 @@ def register(request):
         return render(request,'notdone.html',locals())
     else:
         form = Register()
-    return render(request,'contactus.html',locals())    
+    return render(request,'contactus.html',locals())   
+
+
+
+def course_detail(request,course): 
+    print course
+    course = Courses.objects.filter(title=course)
+    print course
+    return render(request, 'course_detail.html', locals()) 
