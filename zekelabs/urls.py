@@ -40,7 +40,7 @@ urlpatterns += [
 
     url("^$", direct_to_template, {"template": "index.html"}, name="home"),
     url("^home$", direct_to_template, {"template": "index.html"}, name="home"),
-    url("^bases$", direct_to_template, {"template": "bases.html"}, name="home"),
+    url("^bases$", direct_to_template, {"template": "bases.html"}, name="bases"),
     url(r'^register/$', profviews.register, name='register'),
     url(r'^blogs/$', 'blogs.views.index'),
     url(r'^(?P<slug>[\w\-]+)/$', 'blogs.views.post'),
