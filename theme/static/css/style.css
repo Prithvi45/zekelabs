@@ -94,6 +94,8 @@ blockquote {
 .margin-btm-50 {
   margin-bottom: 50px; }
 
+
+
 /**preloader**/
 .js div#preloader {
   position: fixed;
@@ -991,6 +993,15 @@ Footer styles
   background-color: #eee;
   color: #888; }
 
+
+.no-margin {
+  margin: 0px; }
+
+.instagram-feed {
+  padding-top: 60px;
+  background-color: #f5f5f5; }
+
+
 /*
 Staff
 */
@@ -1029,7 +1040,8 @@ accordions
   content: "\f106"; }
 
 .pattern-bg {
-  background-color: #fff;
+  background: url("http://bootstraplovers.com/templates/assan-v2.4/assan-education/images/pattern.png") repeat left top scroll #FFF; 
+  /*background-color: #fff;*/
   padding: 60px 0; }
   .pattern-bg .center-heading h2, .pattern-bg .center-heading p {
     color: #fff; }
@@ -1308,3 +1320,34 @@ accordions
   font-size: 20px;
   font-weight: 400;
   text-transform: capitalize;}
+
+
+
+/***testimonials**/
+.testimonials {
+  padding: 80px 0;
+  background-color: #eee;
+  overflow: hidden;
+}
+.testimonials .testi-slide img {
+  margin-bottom: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+}
+.testimonials .testi-slide h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #32c5d2;
+}
+.testimonials .testi-slide .flex-control-paging li a {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+.testimonials .testi-slide .flex-control-paging li a.flex-active {
+  background: #32c5d2;
+}
+
