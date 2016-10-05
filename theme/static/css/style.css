@@ -381,7 +381,7 @@ Top bar style
 
 /*url("../images/pattern.png")*/
 .navbar-inverse {
-  background-color: transparent;
+  background-color: #eee;;
   border: 0px;
   margin: 0px;
   padding: 0px 0; }
@@ -393,11 +393,12 @@ Top bar style
     letter-spacing: 1px;
     color: #eee; }
     .navbar-inverse .navbar-nav > li > a:hover {
-      color: rgba(0, 0, 0, 0.1);
-       background-color: #fff; }
+      /*color: rgba(0, 0, 0, 0.1);*/
+       color : #FF0000;
+       background-color: #eee; }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
-  color: rgba(0, 0, 0, 0.1);
+  /*color: rgba(0, 0, 0, 0.1);*/
    background-color: #fff; }
 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
@@ -1350,4 +1351,3 @@ accordions
 .testimonials .testi-slide .flex-control-paging li a.flex-active {
   background: #32c5d2;
 }
-
