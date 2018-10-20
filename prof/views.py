@@ -13,7 +13,6 @@ from django.forms import modelformset_factory
 # Create your views here.
 
 def register(request):
-    print "im here"
     if request.method == 'POST':
         form = Register(request.POST)
         if form.is_valid():
@@ -21,9 +20,7 @@ def register(request):
             email = form.cleaned_data['email']
             mobile = form.cleaned_data['mobile']
             subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
-            
-            
+            message = form.cleaned_data['message']         
             
             # message = form.cleaned_data['message']
             form.save()
@@ -39,7 +36,5 @@ def register(request):
 
 
 def course_detail(request,course): 
-    print course
     course = Courses.objects.filter(title=course)
-    print course
     return render(request, 'course_detail.html', locals()) 
